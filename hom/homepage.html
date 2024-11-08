@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch cá nhân</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <div class="wrapper">
+        <button class="hamburger" onclick="toggleSidebar()">&#9776;</button> <!-- Nút hamburger -->
+        <nav class="sidebar">
+            <h2>Lịch cá nhân</h2>
+            <ul>
+                <li>Nhiệm vụ, sự kiện</li>
+                <li>Tiến trình</li>
+                <li>Nhắc nhở</li>
+                <li>Đăng xuất</li>
+            </ul>
+            <button class="add-button">+</button>
+        </nav>
+        <div class="calendar-container">
+            <header class="calendar-header">
+                <div class="month-navigation">
+                    <button id="prevMonth">&#9664;</button>
+                    <span id="monthYear">Tháng 10 2024</span>
+                    <button id="nextMonth">&#9654;</button>
+                </div>
+                <nav class="top-nav">
+                    <span>Tất cả</span>
+                    <span>Sự kiện</span>
+                    <span>Nhiệm vụ</span>
+                    <span>Quá hạn</span>
+                    <span>&#128100;</span>
+                    <span>&#128197;</span>
+                    <span>&#128100;</span>
+                    <span>&#10006;</span>
+                </nav>
+            </header>
+            <div class="calendar" id="calendar"></div>
+            <div class="task-bar">
+                <span>Nhiệm vụ 1</span>
+                <span>Đang làm</span>
+            </div>
+            <div class="tasks-container">
+                <h3>Nhiệm vụ cho ngày đã chọn:</h3>
+                <div id="selectedDate"></div>
+                <div id="tasksForDay"></div>
+                <input type="text" id="newTask" placeholder="Thêm nhiệm vụ..." />
+                <button id="addTaskButton">Thêm nhiệm vụ</button>
+            </div>
+        </div>
+    </div>
+    <script src="homepage.js"></script>
+</body>
+</html>

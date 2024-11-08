@@ -1,0 +1,141 @@
+/* Đặt nền cho trang */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Chiều cao bằng 100% chiều cao của viewport */
+    width: 100vw;  /* Chiều rộng bằng 100% chiều rộng của viewport */
+    margin: 0;
+    background-color: #ffffff;
+    border: 10px #B05C5C solid;
+    box-sizing: border-box;
+}
+
+/* Định dạng container chính */
+.container {
+    background-color: #FFEEEF;
+    height: 60%; /* Để chiều cao tự động điều chỉnh theo nội dung */
+    max-width: 1000px; /* Chiều rộng tối đa của container */
+    width: 80%; /* Chiều rộng sẽ chiếm 80% chiều rộng của viewport */
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.email, .password {
+    width: 90%;
+    margin-bottom: 15px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.password img, .email img {
+    height: 90px;
+    width: 90px;
+    border: 1px solid black;
+    border-radius: 50%; /* Sử dụng 50% để tạo hình tròn */
+    margin: 10px;
+}
+
+.alternative_Flows {
+    width: 100%;
+    display: flex;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around;
+    text-align: center;
+}
+.link {
+    display: inline-block;
+    text-decoration: none; /* Xóa gạch chân */
+    color: #000000; /* Màu chữ cho link */
+}
+
+
+/* Định dạng input */
+input[type="email"], input[type="password"] {
+    width: 100%; /* Để input chiếm toàn bộ chiều rộng của container */
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: #FFEEEF;
+}
+
+/* Thêm hiệu ứng khi người dùng nhập */
+input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+}
+
+.wallpaper {
+    position: absolute; /* Để có thể định vị chính xác */
+    top: 20px; /* Khoảng cách từ trên cùng */
+    right: 170px; /* Khoảng cách từ bên phải */
+    width: 300px;
+    height: 80px;
+    z-index: 10;
+    display: flex;
+}
+.boxWP { /*35*/
+    height: 100px;
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 0; /* Căn lề trái bằng 0 */
+    margin-right: auto; /* Để đảm bảo nó được căn trái */
+}
+.box1{
+    width: 35px;
+    background-color:#803333;
+}
+.box2{
+    width: 35px;
+    background-color: #a14444;
+}
+.box3{
+    width: 35px;
+    background-color: #a94d4d;
+}
+#text{ /*180*/
+    width: 190px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.text1{
+    width: 180px;
+    text-align: center;
+    height: 5px;
+    margin-top: 20px;
+    color: #f65ba0;
+}
+.text2{
+    width: 180px;
+    text-align: center;
+    height: 5px;
+    color: #9d2e2e;
+    margin-top: 10px;
+}
+.text3{
+    width: 180px;
+    text-align: center;
+    height: 10px;
+    margin-top: 20px;
+    color: #f65ba0;
+}
+
+#title {
+    text-align: left; /* Căn lề trái cho văn bản */
+    margin-left: 20px; /* Khoảng cách từ bên trái */
+    font-size: 24px; /* Kích thước chữ cho tiêu đề */
+    font-weight: bold; /* Làm cho chữ đậm */
+    margin-bottom: 20px; /* Khoảng cách phía dưới tiêu đề */
+}
